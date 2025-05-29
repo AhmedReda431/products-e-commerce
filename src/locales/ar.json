@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "services": "خدماتنا",
+    "contact": "اتصل بنا"
+  },
+  "messages": {
+    "Error occurred": "حدث خطأ ما",
+    "Saved": "تم الحفظ",
+    "test message":"رسالة للتجربة"
+  }
+}

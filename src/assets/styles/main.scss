@@ -1,0 +1,11 @@
+// src/assets/styles/main.scss
+
+// 1️⃣ Vuetify settings must come first
+@use 'vuetify/settings' with (
+  $button-border-radius: 12px
+);
+
+// 2️⃣ Your partials next (you can keep using @import if you prefer)
+@import './variables';
+@import './overrides';
+@import './utilities';
