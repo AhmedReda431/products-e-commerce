@@ -1,12 +1,12 @@
 <template>
   <v-app :dir="i18n.global.locale.value === 'ar' ? 'rtl' : 'ltr'">
     <!-- Carousel (Background Layer) -->
-    <Carouse />
+    
     <!-- Navbar -->
     <Navbar />
 
     <!-- Main Content -->
-    <v-main class="pa-4 mt-5 main-content">
+    <v-main class="py-4 mt-5 main-content">
       <router-view />
       <GlobalSnackbar />
     </v-main>
@@ -17,7 +17,7 @@
 
 <script setup>
 import Navbar from "@/components/layout/Navbar.vue";
-import Carouse from "@/components/Carousel.vue"
+
 import Footer from "@/components/layout/Footer.vue";
 import { watch } from "vue";
 import i18n from "@/plugins/i18n"; // Import the global i18n instance directly

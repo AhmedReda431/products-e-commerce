@@ -1,8 +1,13 @@
 <template>
   <div class="home-page-wrapper">
+    <Carouse />
     <v-container>
       <div class="products-component-wrapper">
-        <ProductsComponent :products="products" :loading="loading" :error="error" />
+        <ProductsComponent
+          :products="products"
+          :loading="loading"
+          :error="error"
+        />
       </div>
     </v-container>
   </div>
@@ -12,7 +17,7 @@
 import { ref, onMounted } from "vue";
 import ProductsComponent from "@/components/products/ProductsComponent.vue";
 import axios from "@/plugins/axios";
-
+import Carouse from "@/components/Carousel.vue";
 const products = ref([]);
 const loading = ref(false);
 const error = ref(null);
