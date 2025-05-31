@@ -200,4 +200,7 @@ const theme = useTheme();
   width: 100%;
   padding: 16px;
 }
+.white--text{
+  color: #fff !important;
+}
 </style>
